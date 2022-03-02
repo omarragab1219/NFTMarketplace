@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 5rem;
+  background-color: #322392;
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  background-color: #2876f9;
+  background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+
+  /* background-color: rgb(0, 0, 0); */
+  /* height: calc(100vh - 6rem); */
+}
+
+.formContainer0 {
+  margin-right: 300px;
+  height: 40rem;
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px black;
+  background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+  grid-template-columns: 1fr;
+}
+
+.title {
+  font-size: 34px;
+  text-shadow: 0px 2px 4px black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  background-image: linear-gradient(
+    315deg,
+    #000000 0%,
+    #646464 40%,
+    #646464 60%,
+    #000000 100%
+  );
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.input {
+  padding-left: 20px;
+  height: 40px;
+  width: 30rem;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px;
+  margin-bottom: 30px;
+  box-shadow: 2px 4px 8px black;
+  border: none;
+}
+.description_count_container {
+  position: relative;
+}
+.characterCount {
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 1.4rem;
+  top: 1rem;
+}
+.description {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 10rem;
+  width: 30rem;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  resize: none;
+  box-shadow: 2px 4px 8px black;
+}
+.limitError {
+  border: 5px solid red;
+}
+/* -------------------------------------------------------------------------- */
+.priceContainer {
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+.priceInput {
+  border: none;
+  padding-left: auto;
+  height: 3rem;
+  width: 10px;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 4px 8px black;
+  /* unicode-bidi: bidi-override; */
+  /* direction: RTL; */
+  padding-left: auto;
+  width: 100px;
+}
+.eth {
+  font-size: 40px;
+  text-shadow: 0px 2px 4px black;
+}
+/* -------------------------------------------------------------------------- */
+.file {
+  cursor: pointer;
+  padding: 10px;
+  height: 6rem;
+  width: 40rem;
+  border-radius: 50px;
+  font-size: 2rem;
+  color: aliceblue;
+}
+.btn {
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  height: 6rem;
+  width: 20rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  border: none;
+  box-shadow: 2px 4px 8px black;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  border: 1px solid white;
+  text-shadow: 0px 20px 8px solid black;
+}
+
+.NFTCard0 {
+  margin-bottom: 50px;
+  transform: scale(0.95);
+}
+
+.fileButtonLabel {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 12px;
+  text-shadow: 0px 2px 4px black;
+  border-radius: 12px;
+  background-color: blueviolet;
+  margin-bottom: 12px;
+  border: 1px solid white;
+  background-color: #4834d4;
+  background-image: linear-gradient(315deg, #4834d4 0%, #322392 74%);
+}
+.fileButtonLabel:hover {
+  color: aliceblue;
+}
+.fileButton {
+  display: none;
+}
+
+@media only screen and (max-width: 1420px) {
+  .formContainer0 {
+    margin-right: 150px;
+  }
+  .NFTCard0 {
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 1242px) {
+  .formContainer0 {
+    margin-right: 80px;
+    transform: scale(0.8);
+  }
+  .NFTCard0 {
+    transform: scale(0.8);
+  }
+}
+@media only screen and (max-width: 1104px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .formContainer0 {
+    margin-right: 0px;
+    transform: scale(0.9);
+    margin-top: 100px;
+    /* position: absolute;
+    top: 500px; */
+  }
+  .NFTCard0 {
+    /* transform: scale(0.6); */
+    /* position: absolute;
+    top: -20px; */
+  }
+  .NFTCard0 {
+    transform: scale(1);
+    /* position: absolute;
+    top: -20px; */
+  }
+}

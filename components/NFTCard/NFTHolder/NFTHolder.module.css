@@ -1,0 +1,81 @@
+.container {
+  background-color: rgba(251, 15, 251, 0.985);
+  height: 5rem;
+  width: 36rem;
+  position: absolute;
+  bottom: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: -1; */
+}
+
+.oval1 {
+  animation: spin 1s ease-in-out forwards;
+  position: absolute;
+  bottom: 0.8rem;
+  width: 500px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: -1; */
+
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-right: 30px solid rgb(255, 255, 255);
+  border-left: 30px solid rgb(255, 255, 255);
+  box-shadow: /* outer ring glow color */ 0 14px 10px 30px rgb(5, 218, 246),
+    /* -------------------------------------------------------------------------- */
+      /* outter ring */ 0px 20px 0px 20px rgb(255, 255, 255),
+    /* bottom glow */ 0px 30px 20px 10px rgb(255, 255, 255),
+    /* -------------------------------------------------------------------------- */
+      /*inside right */ inset 40px 0 120px rgb(0, 0, 0),
+    /* inside left */ inset -40px 0 120px rgb(5, 5, 5);
+}
+/* -------------------------------------------------------------------------- */
+
+.lineLeft,
+.lineRight {
+  height: 1px;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  /* border: 2px solid rgba(0, 0, 0, 0); */
+}
+.lineLeft {
+  position: absolute;
+  transform: rotate(50deg);
+  /* left: 2rem; */
+  top: -5rem;
+  left: -3rem;
+  box-shadow: 0px -20px 200px 80px rgb(7, 197, 255),
+    0px -20px 50px 200px rgba(0, 85, 255, 0.704),
+    inset 0px 0 60px rgb(1, 170, 255);
+}
+.lineRight {
+  position: absolute;
+  transform: rotate(130deg);
+  top: -5rem;
+  left: 10rem;
+  box-shadow: 0px 20px 50px 80px rgb(7, 197, 255),
+    0px 20px 50px 80px rgba(0, 85, 255, 0.704),
+    inset 0px 0 60px rgb(1, 170, 255);
+}
+
+/* -------------------------------------------------------------------------- */
+@keyframes spin {
+  0% {
+    transform: rotateY(270deg);
+    display: none;
+  }
+
+  50% {
+  }
+
+  100% {
+    transform: rotateY(360deg);
+    width: 500px;
+  }
+}

@@ -1,0 +1,119 @@
+.container0 {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 40rem;
+  width: 22rem;
+  transform: scale(1);
+}
+.container {
+  animation: spin 1s ease-in-out forwards;
+  z-index: +1;
+  border: 1px solid rgba(13, 13, 13, 0.108);
+  box-shadow: inset 0px -1px 2px 2px rgb(254, 254, 254),
+    inset 0px 1px 12px 0px rgb(239, 239, 239), 0px 0px 4px 0px rgb(23, 23, 23),
+    0px 0px 6px 0px rgba(255, 255, 255, 0.622);
+  width: 22rem;
+  height: 40rem;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #383838 0%, #d2ccc4 74%);
+  background-color: #e7eff9;
+  background-image: linear-gradient(315deg, #000101 0%, #ffffff 74%);
+}
+.image {
+  height: 23rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgb(176, 176, 176);
+  box-shadow: 0px 3px 8px black;
+}
+
+.title {
+  color: #ffffff;
+  margin-top: 0.5rem;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0px 3px 2px black;
+}
+.description {
+  color: #ffffff;
+  margin-top: 0.22rem;
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  overflow: scroll;
+  height: 100px;
+  width: 330px;
+  text-shadow: 0px 2px 2px black;
+}
+.price_Btn_Container {
+  position: absolute;
+  bottom: 0rem;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 1px solid rgb(255, 255, 255);
+  justify-content: space-around;
+  height: 89px;
+  /* box-shadow: 0px 0px 3px 5px rgb(255, 255, 255),
+    inset 0px 0px 3px 5px rgb(90, 90, 90); */
+}
+.price {
+  color: #ffffff;
+  text-shadow: 0px 2px 2px black;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.btn {
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 10px 28px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(179, 6, 6);
+  color: #ffffff;
+  text-shadow: 0px 2px 2px black;
+  border: 1px solid white;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #00c8ff 74%);
+}
+
+@keyframes spin {
+  0% {
+    /* transform: rotateX(270deg); */
+    opacity: 0;
+  }
+  60% {
+    transform: rotateX(270deg);
+    opacity: 0;
+  }
+
+  50% {
+  }
+
+  100% {
+    transform: rotateX(360deg);
+    opacity: 1;
+    /* width: 500px; */
+  }
+}
